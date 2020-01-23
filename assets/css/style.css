@@ -230,7 +230,51 @@ h2{
 /*=================================
   freedom section styling ends here
 =================================*/ 
+/*=================================
+  articles section styling starts here
+=================================*/ 
+.articles h4{
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 45px;
+}
 
+.articles span{
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+.articles p{
+  margin-top: 3%;
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.article_one{
+  border: 2px solid #000; 
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.verticle_articles{ display: flex;  }
+.verticle_articles div{
+  width: 60%;}
+
+.article_two,.article_three{
+  border: 2px solid #000;
+  border-top: none;
+}
+
+.article_three{ border-left: none; }
+.article_two div,.article_three div{ 
+  width: 85%;
+  padding: 60px 42px ; 
+}
+ /*=================================
+  articles section styling ends here
+=================================*/ 
 
 
 
