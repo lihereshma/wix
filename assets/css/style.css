@@ -193,6 +193,8 @@ h2{
 /*=================================
   freedom section styling starts here
 =================================*/ 
+.description{ width: 70%;}
+
 .freedom .wrapper{
   width: 90%;
   display: flex;
@@ -204,6 +206,7 @@ h2{
   text-transform: capitalize;
   font-size: 70px;
   font-weight: bolder;
+  width: 70%;
 }
 
 .freedom p{
