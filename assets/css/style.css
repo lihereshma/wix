@@ -106,9 +106,13 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-.top .wrapper{ width: 90%;}
 .top{ background-image: url('http://via.placeholder.com/1286x702'); }
 .header_links a{  padding: 0px 5px; }
+
+.top .wrapper{ 
+  width: 90%;
+  padding-bottom: 35%;
+}
 
 header{
   display: flex;
@@ -181,16 +185,48 @@ h2{
   margin-top: 4%;
   font-size: 20px;
   text-transform: capitalize;
-  margin-bottom: 35%;
+
 }
-
-
-
-
 /*=================================
   banner styling ends here
 =================================*/
+/*=================================
+  freedom section styling starts here
+=================================*/ 
+.freedom .wrapper{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14% 0;
+}
 
+.freedom h3{
+  text-transform: capitalize;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.freedom p{
+  text-transform: capitalize;
+  line-height: 200%;
+  font-size: 20px;
+}
+
+.get_started{
+  text-transform: capitalize;
+  font-size: 20px;
+  border-bottom: 1px solid #7c7c7c;
+  margin-top: 3%;
+  color: #000;
+}
+.get_started::after{
+  content: '  \f105';
+  font-family: FontAwesome;
+  font-size: 25px;
+}
+/*=================================
+  freedom section styling ends here
+=================================*/ 
 
 
 
