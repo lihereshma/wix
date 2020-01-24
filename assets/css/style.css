@@ -108,6 +108,8 @@ li {
 =================================*/
 .top{ background-image: url('http://via.placeholder.com/1286x702?text=banner'); }
 .header_links a{  padding: 0px 5px; }
+nav,.sign_in{ margin-top: 15px;}
+nav a:hover,.global:hover{ color: #9d18aa; }
 
 .top .wrapper{ 
   width: 90%;
@@ -120,12 +122,9 @@ header{
 }
 
 header a{
-  margin-top: 25px;
   color: #fff;
   text-transform: capitalize;
 }
-
-h1 a{ margin-top: 10px; }
 
 nav{
   position: absolute;
@@ -162,6 +161,11 @@ nav li{
   float: right;
   font-size: 30px
 }
+
+.header_links a:last-child:hover,.banner a:hover{
+  background-color: #9d18aa;
+  color: #fff;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -192,7 +196,6 @@ h2{
   margin-top: 4%;
   font-size: 20px;
   text-transform: capitalize;
-
 }
 /*=================================
   banner styling ends here
@@ -220,12 +223,13 @@ h2{
   text-transform: capitalize;
   line-height: 200%;
   font-size: 20px;
+  color: #46515b
 }
 
 .get_started{
   text-transform: capitalize;
   font-size: 20px;
-  border-bottom: 1px solid #7c7c7c;
+  border-bottom: 2px solid #ccc;
   margin-top: 10%;
   color: #000;
 }
@@ -234,6 +238,11 @@ h2{
   content: '  \f105';
   font-family: FontAwesome;
   font-size: 25px;
+}
+
+.get_started:hover{
+  color: #526dda;
+  font-weight: bolder;
 }
 /*=================================
   blog section styling ends here
@@ -261,6 +270,7 @@ h2{
   margin-top: 3%;
   line-height: 150%;
   font-size: 16px;
+  color: #46515b
 }
 
 .article_one{
@@ -473,11 +483,10 @@ h6{
   float: right;
 }
 
-footer a:hover{ 
+footer a:hover,.links a:hover{ 
   color: #3eca80; 
   font-weight: bold;
 }
-.linls a:hover{ color: #9d18aa;  }
  /*=================================
   footer styling ends here
 =================================*/ 
