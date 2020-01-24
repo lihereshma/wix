@@ -353,13 +353,131 @@ h2{
 /*=================================
   footer styling starts here
 =================================*/ 
+footer a{ color: #46515b;}
+footer div{ width: 20%;}
+.wix img{ margin-bottom: 15%; }
+.wix p{ margin-bottom: 5%;  }
+.links{ margin-top: 10%;}
 
+footer .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15%;
+  width: 81%;
+}
 
+footer li{
+  display: block;
+  text-transform: capitalize;
+  margin-bottom: 5%;
+}
 
+h6{
+  margin-bottom: 10%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+.wix{
+  width: 25%;
+  color: #46515b;
+}
 
+.links li{
+  display: inline-block;
+  padding: 0px 6px;
+  font-size: 20px;
+}
 
+.facebook{
+  text-indent: -9999px;
+  display: inline-block;
+}
 
+.facebook::before{
+  content: '\f09a';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.twitter{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.twitter::before{
+  content: '\f099';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.google_plus{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.google_plus::before{
+  content: '\f0d5';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.youtube{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.youtube::before{
+  content: '\f16a';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.pinterest{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.pinterest::before{
+  content: '\f231';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.instagram{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.instagram::before{
+  content: '\f16d';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+.linked_in{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.linked_in::before{
+  content: '\f0e1';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+}
+
+footer a:hover{ 
+  color: #3eca80; 
+  font-weight: bold;
+}
+.linls a:hover{ color: #9d18aa;  }
  /*=================================
   footer styling ends here
 =================================*/ 
