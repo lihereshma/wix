@@ -241,7 +241,7 @@ h2{
 }
 
 .get_started:hover{
-  color: #526dda;
+  color: #f7bb52;
   font-weight: bolder;
 }
 /*=================================
@@ -253,6 +253,9 @@ h2{
 .articles .wrapper{ width: 99%;}
 .article_one figure{ width: 50%;}
 .verticle_articles{ display: flex;  }
+.article_one:hover{ color: #9d18aa;}
+.article_two:hover{ color: #3eca80;}
+.article_three:hover{ color: #526dda;}
 
 .articles h4,.about h3,.features_link{
   text-transform: capitalize;
@@ -282,7 +285,7 @@ h2{
 .article_one div{ 
   box-sizing: border-box;
   width: 50%;
-  padding: 9%;
+  padding: 7%;
 }
 
 .article_two,.article_three{
@@ -306,6 +309,7 @@ h2{
 .features .wrapper{ padding: 16% 0;}
 .feature_two,.feature_four,.feature_five{ margin-top: 10%;}
 .feature_six{ margin-top: 15%;}
+.features li{ flex-basis: 40%;  }
 
 .features h3{
   text-transform: capitalize;
@@ -323,9 +327,6 @@ h2{
   padding-bottom: 10%;
 }
 
-.features li{ flex-basis: 40%;  }
-
-
 h5{
   text-transform: capitalize;
   font-size: 25px;
@@ -333,25 +334,43 @@ h5{
   margin-top: 5%;
 }
 
-
-
-.features_link a:after{
-  position: absolute;
-  top: 25%;
-  right: -10%;
-  content: '  \f101';
-  font-family: FontAwesome;
-  font-size: 30px;
+.features_link{
+  margin: 0px auto;
+  width: 50%;
+  padding-left: 15%;
 }
 
-.features_link a{
+.text{
   color: #000;
   border-bottom: 3px solid #000;
 }
 
+.text::before{
+  padding: 10px;
+  content: '\f101';
+  font-family: FontAwesome;
+  float: right;
+  font-size: 40px;
+  color: #000;
+  position: absolute;
+  right: 34%;
+}
 
-.features img:hover{
-  box-shadow: 10px 10px #3eca80;
+.text:hover::before{ 
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow{
+  0%    {  right: 34%;}
+  100%  {  right: 30%;}
+} 
+
+.features img:hover,.about img:hover{
+  box-shadow: 20px 20px #3eca80;
 }
  /*=================================
   feature section styling ends here
@@ -427,7 +446,8 @@ h6{
   font-size: 20px;
 }
 
-.facebook{
+.facebook,.twitter,.google_plus,
+.youtube,.pinterest,.instagram,.linked_in{
   text-indent: -9999px;
   display: inline-block;
 }
@@ -439,21 +459,11 @@ h6{
   float: right;
 }
 
-.twitter{
-  text-indent: -9999px;
-  display: inline-block;
-}
-
 .twitter::before{
   content: '\f099';
   font-family: FontAwesome;
   text-indent: 0;
   float: right;
-}
-
-.google_plus{
-  text-indent: -9999px;
-  display: inline-block;
 }
 
 .google_plus::before{
@@ -463,21 +473,11 @@ h6{
   float: right;
 }
 
-.youtube{
-  text-indent: -9999px;
-  display: inline-block;
-}
-
 .youtube::before{
   content: '\f16a';
   font-family: FontAwesome;
   text-indent: 0;
   float: right;
-}
-
-.pinterest{
-  text-indent: -9999px;
-  display: inline-block;
 }
 
 .pinterest::before{
@@ -487,21 +487,11 @@ h6{
   float: right;
 }
 
-.instagram{
-  text-indent: -9999px;
-  display: inline-block;
-}
-
 .instagram::before{
   content: '\f16d';
   font-family: FontAwesome;
   text-indent: 0;
   float: right;
-}
-
-.linked_in{
-  text-indent: -9999px;
-  display: inline-block;
 }
 
 .linked_in::before{
@@ -512,7 +502,7 @@ h6{
 }
 
 footer a:hover,.links a:hover{ 
-  color: #3eca80; 
+  color: #526dda; 
   font-weight: bold;
 }
  /*=================================
