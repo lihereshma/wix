@@ -106,7 +106,7 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-.top{ background-image: url('http://via.placeholder.com/1286x702'); }
+.top{ background-image: url('http://via.placeholder.com/1286x702?text=banner'); }
 .header_links a{  padding: 0px 5px; }
 
 .top .wrapper{ 
@@ -123,6 +123,13 @@ header a{
   margin-top: 25px;
   color: #fff;
   text-transform: capitalize;
+}
+
+h1 a{ margin-top: 10px; }
+
+nav{
+  position: absolute;
+  left: 11%;
 }
 
 nav li{  
@@ -191,25 +198,25 @@ h2{
   banner styling ends here
 =================================*/
 /*=================================
-  freedom section styling starts here
+  blog section styling starts here
 =================================*/ 
 .description{ width: 70%;}
 
-.freedom .wrapper{
+.blog .wrapper{
   width: 90%;
   display: flex;
   justify-content: space-between;
   padding: 14% 0;
 }
 
-.freedom h3{
+.blog h3{
   text-transform: capitalize;
   font-size: 70px;
   font-weight: bolder;
   width: 70%;
 }
 
-.freedom p{
+.blog p{
   text-transform: capitalize;
   line-height: 200%;
   font-size: 20px;
@@ -219,20 +226,25 @@ h2{
   text-transform: capitalize;
   font-size: 20px;
   border-bottom: 1px solid #7c7c7c;
-  margin-top: 3%;
+  margin-top: 10%;
   color: #000;
 }
+
 .get_started::after{
   content: '  \f105';
   font-family: FontAwesome;
   font-size: 25px;
 }
 /*=================================
-  freedom section styling ends here
+  blog section styling ends here
 =================================*/ 
 /*=================================
   articles section styling starts here
 =================================*/ 
+.articles .wrapper{ width: 99%;}
+.article_one figure{ width: 50%;}
+.verticle_articles{ display: flex;  }
+
 .articles h4{
   text-transform: capitalize;
   font-weight: bolder;
@@ -257,10 +269,11 @@ h2{
   justify-content: space-between;
 }
 
-
-.verticle_articles{ display: flex;  }
-.verticle_articles div{
-  width: 60%;}
+.article_one div{ 
+  box-sizing: border-box;
+  width: 50%;
+  padding: 9%;
+}
 
 .article_two,.article_three{
   border: 2px solid #000;
@@ -268,15 +281,38 @@ h2{
 }
 
 .article_three{ border-left: none; }
-.article_two div,.article_three div{ 
-  width: 85%;
-  padding: 60px 42px ; 
+
+.article_two div,.article_three div{
+  box-sizing: border-box; 
+  padding: 15%; 
 }
  /*=================================
   articles section styling ends here
 =================================*/ 
 
+/*=================================
+  feature section styling starts here
+=================================*/ 
+.features .wrapper{ padding: 16% 0;}
 
+.features h3{
+  text-transform: capitalize;
+  font-size: 74px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  padding: 0px 20%;
+  margin-bottom: 10%;
+}
+
+.features ul{
+  display: flex;
+  justify-content: space-between;
+}
+.features ul li{  width: 50%;}
+
+ /*=================================
+  feature section styling ends here
+=================================*/
 
 
 
