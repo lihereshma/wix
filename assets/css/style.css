@@ -189,11 +189,11 @@ h2{
 }
 
 .banner a{
-  background-color: #fff;
-  color: #68bce6;
   padding: 18px 44px;
   border-radius: 30px;
   margin-top: 4%;
+  background-color: #fff;
+  color: #68bce6;  
   font-size: 20px;
   text-transform: capitalize;
 }
@@ -213,10 +213,10 @@ h2{
 }
 
 .blog h3{
+  width: 70%;
   text-transform: capitalize;
   font-size: 70px;
-  font-weight: bolder;
-  width: 70%;
+  font-weight: bolder;  
 }
 
 .blog p,.about_blocks p{
@@ -227,10 +227,10 @@ h2{
 }
 
 .get_started{
-  text-transform: capitalize;
-  font-size: 20px;
   border-bottom: 2px solid #ccc;
   margin-top: 10%;
+  text-transform: capitalize;
+  font-size: 20px;  
   color: #000;
 }
 
@@ -254,7 +254,7 @@ h2{
 .article_one figure{ width: 50%;}
 .verticle_articles{ display: flex;  }
 
-.articles h4,.about h3{
+.articles h4,.about h3,.features_link{
   text-transform: capitalize;
   font-weight: bolder;
   font-size: 45px;
@@ -266,7 +266,7 @@ h2{
   font-weight: lighter;
 }
 
-.articles p{
+.articles p,.features p{
   margin-top: 3%;
   line-height: 150%;
   font-size: 16px;
@@ -304,6 +304,8 @@ h2{
   feature section styling starts here
 =================================*/ 
 .features .wrapper{ padding: 16% 0;}
+.feature_two,.feature_four,.feature_five{ margin-top: 10%;}
+.feature_six{ margin-top: 15%;}
 
 .features h3{
   text-transform: capitalize;
@@ -316,10 +318,41 @@ h2{
 
 .features ul{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 10%;
 }
-.features ul li{  width: 50%;}
 
+.features li{ flex-basis: 40%;  }
+
+
+h5{
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+
+
+.features_link a:after{
+  position: absolute;
+  top: 25%;
+  right: -10%;
+  content: '  \f101';
+  font-family: FontAwesome;
+  font-size: 30px;
+}
+
+.features_link a{
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+
+.features img:hover{
+  box-shadow: 10px 10px #3eca80;
+}
  /*=================================
   feature section styling ends here
 =================================*/
@@ -327,34 +360,29 @@ h2{
 /*=================================
   about section styling starts here
 =================================*/ 
+.about_blocks{  width: 55%; }
+.about figure{  width: 35%; }
+.about h3{  margin-bottom: 10%; }
+
 .about .wrapper{
   display: flex;
   justify-content: space-between;
   padding-bottom: 5%;
   position: relative;
 }
-.about_blocks{
-  width: 55%;
-}
-.about figure{
-  width: 35%;
-}
+
 .about figure img{
   position: absolute;
   width: 40%;
 }
+
 .about_blocks div{
   box-sizing: border-box;
   padding: 8%;
 }
-.about h3{
-  margin-bottom: 10%;
-}
-
  /*=================================
   about section styling ends here
 =================================*/ 
-
 
 /*=================================
   main styling ends here
@@ -370,16 +398,16 @@ footer div{ width: 20%;}
 .links{ margin-top: 10%;}
 
 footer .wrapper{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 15%;
   width: 81%;
+  padding-bottom: 15%;
+  display: flex;
+  justify-content: space-between;  
 }
 
 footer li{
-  display: block;
-  text-transform: capitalize;
   margin-bottom: 5%;
+  display: block;
+  text-transform: capitalize; 
 }
 
 h6{
@@ -394,8 +422,8 @@ h6{
 }
 
 .links li{
-  display: inline-block;
   padding: 0px 6px;
+  display: inline-block; 
   font-size: 20px;
 }
 
