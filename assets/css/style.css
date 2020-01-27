@@ -204,6 +204,8 @@ h2{
   blog section styling starts here
 =================================*/ 
 .description{ width: 70%;}
+.left_heading{  width: 90%; }
+
 
 .blog .wrapper{
   width: 90%;
@@ -299,7 +301,7 @@ h2{
   box-sizing: border-box; 
   padding: 15%; 
 }
- /*=================================
+/*=================================
   articles section styling ends here
 =================================*/ 
 
@@ -512,7 +514,124 @@ footer a:hover,.links a:hover{
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  .blog .wrapper{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .get_started{
+    margin-top: 5%;
+  }
+  /*=================================
+  blog section styling starts here
+  =================================*/
+  .blog .wrapper{ width: 90%;}
+  
+  .left_heading,.description{  width: 100%;}
 
+  .blog h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%
+  }
+
+  /*=================================
+  blog section styling starts here
+  =================================*/
+  /*=================================
+  articles section styling starts here
+  =================================*/
+  .articles .wrapper{ width: 90%; }
+  .article_two,.article_three{ border: none;}
+  .verticle_articles{ flex-direction: column;}
+  .articles figure{ width: 100%;}   
+  .article_two div,.article_three div{ padding: 5% 0; }
+
+  .article_one{
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    border: none;
+  }
+
+  .article_one div{ 
+    width: 100%;
+    padding: 5% 0;
+  } 
+  /*=================================
+  articles section styling ends here
+  =================================*/
+  /*=================================
+  features section styling starts here
+  =================================*/
+  .text::before{  right: 32%;}
+  .slides a{padding: 2%;}
+  .scroll{  color: #7c7c7c;}
+  .active{ color: #46515b;}
+  .features_link{ padding: 0;} 
+  .features li{ flex-basis: 100%;}
+  .features li:not(:first-child){ display: none;}
+
+  .features .wrapper{ 
+    width: 90%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .features h3{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .scroll{
+    text-indent: -9999px;
+    display: inline-block;
+  }
+
+  .slides{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .scroll::before{
+    content: '\f111';
+    font-family: FontAwesome;
+    font-size: 20px;
+    text-indent: 0;
+    float: right;
+  }
+  /*=================================
+  features section styling starts here
+  =================================*/
+  /*=================================
+  about section styling starts here
+  =================================*/
+  .about_blocks,.about figure{  width: 100%;  }
+  .about div{ padding: 5% 0;}
+
+  .about .wrapper{
+    width: 90%;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+  }
+
+  .about figure img{
+    position: static;
+    width: 100%;
+  }
+  /*=================================
+  about section styling ends here
+  =================================*/ 
+  /*=================================
+  footer section styling ends here
+  =================================*/ 
+  footer{ display: none;  }
+  /*=================================
+  footer section styling ends here
+  =================================*/ 
 
 }  
