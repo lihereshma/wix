@@ -533,6 +533,13 @@ footer a:hover,.links a:hover{
   header section styling starts here
   =================================*/
   nav,.header_links{  display: none;}
+
+  .menu:hover nav{
+    display: block;
+    color: #000;
+  }
+
+
   header{  margin: 20px 0;}
   .top{ background-image: none; }
   .top .wrapper{  padding: 0;}
@@ -557,6 +564,8 @@ footer a:hover,.links a:hover{
     font-size: 30px;
     color: #000;
   }
+
+
   /*=================================
   header section styling starts here
   =================================*/
