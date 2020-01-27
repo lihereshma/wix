@@ -166,6 +166,8 @@ nav li{
   background-color: #9d18aa;
   color: #fff;
 }
+
+.menu{  display: none;}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -524,6 +526,42 @@ footer a:hover,.links a:hover{
     margin-top: 5%;
   }
   /*=================================
+  header section styling starts here
+  =================================*/
+  nav,.header_links{  display: none;}
+  header{  margin: 20px 0;}
+  .top{ background-image: none; }
+  .top .wrapper{  padding: 0;}
+
+  .banner{ 
+    padding-top: 10%; 
+    padding-bottom: 30%;
+    margin: 0;
+    background-image: url('http://via.placeholder.com/700x480?text=banner');
+  }
+
+  .menu{
+    text-indent: -9999px;
+    display: inline-block;
+  }
+
+  .menu::before{
+    content: '\f0c9';
+    font-family: FontAwesome;
+    text-indent: 0;
+    float: right;
+    font-size: 30px;
+    color: #000;
+  }
+
+  .menu:hover{
+  
+  }
+  /*=================================
+  header section styling starts here
+  =================================*/
+
+  /*=================================
   blog section styling starts here
   =================================*/
   .blog .wrapper{ width: 90%;}
@@ -535,7 +573,6 @@ footer a:hover,.links a:hover{
     text-align: center;
     margin-bottom: 5%
   }
-
   /*=================================
   blog section styling starts here
   =================================*/
@@ -583,6 +620,7 @@ footer a:hover,.links a:hover{
     width: 100%;
     padding: 0;
     text-align: center;
+    font-size: 50px;
   }
 
   .scroll{
@@ -633,5 +671,7 @@ footer a:hover,.links a:hover{
   /*=================================
   footer section styling ends here
   =================================*/ 
-
+  .no_hover{
+    pointer-events: none;
+  }
 }  
