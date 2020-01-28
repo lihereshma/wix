@@ -108,7 +108,7 @@ li {
 =================================*/
 .top{ background-image: url('http://via.placeholder.com/1286x702?text=banner'); }
 .header_links a{  padding: 0px 5px; }
-nav,.sign_in{ margin-top: 15px;}
+nav,.sign_in{ margin-top: 15px; }
 nav a:hover,.global:hover{ color: #9d18aa; }
 
 .top .wrapper{ 
@@ -141,6 +141,8 @@ nav li{
   border-radius: 30px;
   background-color: #fff;
   color: #000;
+  transition-property: all;
+  transition-delay: 0.5s;
 }
 
 .subscriptions:after{
@@ -166,6 +168,8 @@ nav li{
   background-color: #9d18aa;
   color: #fff;
 }
+
+.menu{  display: none;  }
 /*=================================
   Header styling ends here
 =================================*/  
@@ -189,6 +193,8 @@ h2{
 }
 
 .banner a{
+  transition-property: all;
+  transition-delay: 0.5s;
   padding: 18px 44px;
   border-radius: 30px;
   margin-top: 4%;
@@ -203,7 +209,9 @@ h2{
 /*=================================
   blog section styling starts here
 =================================*/ 
-.description{ width: 70%;}
+.description{ width: 70%; }
+.left_heading{  width: 90%; }
+
 
 .blog .wrapper{
   width: 90%;
@@ -241,7 +249,7 @@ h2{
 }
 
 .get_started:hover{
-  color: #f7bb52;
+  color: #68bce6;
   font-weight: bolder;
 }
 /*=================================
@@ -250,12 +258,24 @@ h2{
 /*=================================
   articles section styling starts here
 =================================*/ 
-.articles .wrapper{ width: 99%;}
-.article_one figure{ width: 50%;}
+.articles .wrapper{ width: 99%; }
+.article_one figure{ width: 50%;  }
 .verticle_articles{ display: flex;  }
-.article_one:hover{ color: #9d18aa;}
-.article_two:hover{ color: #3eca80;}
-.article_three:hover{ color: #526dda;}
+
+.article_one:hover{ 
+  background-color: #e4d5bc;
+  color: #9d18aa; 
+}
+
+.article_two:hover{ 
+  background-color: #e4d5bc;
+  color: #3eca80; 
+}
+
+.article_three:hover{
+  background-color: #e4d5bc;
+  color: #526dda; 
+}  
 
 .articles h4,.about h3,.features_link{
   text-transform: capitalize;
@@ -280,6 +300,8 @@ h2{
   border: 2px solid #000; 
   display: flex;
   justify-content: space-between;
+  transition-property: all;
+  transition-delay: 0.5s;
 }
 
 .article_one div{ 
@@ -291,6 +313,8 @@ h2{
 .article_two,.article_three{
   border: 2px solid #000;
   border-top: none;
+  transition-property: all;
+  transition-delay: 0.5s;
 }
 
 .article_three{ border-left: none; }
@@ -299,17 +323,18 @@ h2{
   box-sizing: border-box; 
   padding: 15%; 
 }
- /*=================================
+/*=================================
   articles section styling ends here
 =================================*/ 
 
 /*=================================
   feature section styling starts here
 =================================*/ 
-.features .wrapper{ padding: 16% 0;}
-.feature_two,.feature_four,.feature_five{ margin-top: 10%;}
-.feature_six{ margin-top: 15%;}
+.features .wrapper{ padding: 16% 0; }
+.feature_two,.feature_four,.feature_five{ margin-top: 10%;  }
+.feature_six{ margin-top: 15%;  }
 .features li{ flex-basis: 40%;  }
+.slides{  display: none;  }
 
 .features h3{
   text-transform: capitalize;
@@ -365,13 +390,12 @@ h5{
 }
 
 @keyframes arrow{
-  0%    {  right: 34%;}
-  100%  {  right: 30%;}
+  0%    {  right: 34%;  }
+  100%  {  right: 30%;  }
 } 
 
-.features img:hover,.about img:hover{
-  box-shadow: 20px 20px #3eca80;
-}
+.features img:hover,
+.about img:hover{ box-shadow: 20px 20px #3eca80;  }
  /*=================================
   feature section styling ends here
 =================================*/
@@ -410,11 +434,11 @@ h5{
 /*=================================
   footer styling starts here
 =================================*/ 
-footer a{ color: #46515b;}
-footer div{ width: 20%;}
+footer a{ color: #46515b; }
+footer div{ width: 20%; }
 .wix img{ margin-bottom: 15%; }
 .wix p{ margin-bottom: 5%;  }
-.links{ margin-top: 10%;}
+.links{ margin-top: 10%;  }
 
 footer .wrapper{
   width: 81%;
@@ -512,7 +536,184 @@ footer a:hover,.links a:hover{
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  .no_hover{  pointer-events: none; }
+  .get_started{ margin-top: 5%; }
 
+  /*=================================
+  header section styling starts here
+  =================================*/  
+  .header_links{  display: none;  }
+  header{  margin: 20px 0;  }
+  .top{ background-image: none; }
+  .top .wrapper{  padding: 0; }
+  .hamburger:hover nav{ display: block; }
+  
+  nav {
+    position: absolute;
+    display: flex;
+    width: 20%;
+    justify-self: right;
+    align-self: right;
+    transform: translate(325%, -15%);
+    display: none;
+    background: #3eca80;
+    opacity: 0.5;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-direction: column;
+  }
 
+  nav a{  
+    font-weight: bold;
+    color: #000;
+    padding-right: 10px;
+  }
 
+  .banner{ 
+    padding-top: 10%; 
+    padding-bottom: 30%;
+    margin: 0;
+    background-image: url('http://via.placeholder.com/700x480?text=banner');
+  }
+
+  .menu{
+    text-indent: -9999px;
+    display: inline-block;
+  }
+
+  .menu::before{
+    content: '\f0c9';
+    font-family: FontAwesome;
+    text-indent: 0;
+    float: right;
+    font-size: 30px;
+    color: #000;
+  }
+  /*=================================
+  header section styling starts here
+  =================================*/
+
+  /*=================================
+  blog section styling starts here
+  =================================*/
+  .blog .wrapper{ 
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left_heading,.description{  width: 100%; }
+
+  .blog h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%
+  }
+  /*=================================
+  blog section styling starts here
+  =================================*/
+  /*=================================
+  articles section styling starts here
+  =================================*/
+  .articles .wrapper{ width: 90%; }
+  .article_two,.article_three{ border: none;  }
+  .verticle_articles{ flex-direction: column; }
+  .articles figure{ width: 100%;  }   
+  .article_two div,.article_three div{ padding: 5% 0; }
+
+  .article_one{
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    border: none;
+  }
+
+  .article_one div{ 
+    width: 100%;
+    padding: 5% 0;
+  } 
+  /*=================================
+  articles section styling ends here
+  =================================*/
+  /*=================================
+  features section styling starts here
+  =================================*/
+  .slides a{  padding: 2%;  }
+  .scroll{  color: #7c7c7c; }
+  .active{ color: #46515b;  }
+  .features_link{ padding: 0; } 
+  .features li{ flex-basis: 100%; }
+  .features li:not(:first-child){ display: none;  }
+  .features_link{ font-size: 30px;  }
+
+  .features .wrapper{ 
+    width: 90%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .features h3{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .text::before{
+    right: 45%;
+    font-size: 30px;
+  }
+
+  .scroll{
+    text-indent: -9999px;
+    display: inline-block;
+  }
+
+  .slides{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .scroll::before{
+    content: '\f111';
+    font-family: FontAwesome;
+    font-size: 20px;
+    text-indent: 0;
+    float: right;
+  }
+  /*=================================
+  features section styling starts here
+  =================================*/
+  /*=================================
+  about section styling starts here
+  =================================*/
+  .about_blocks,.about figure{  width: 100%;  }
+  .about div{ padding: 5% 0;  }
+
+  .about .wrapper{
+    width: 90%;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+  }
+
+  .about figure img{
+    position: static;
+    width: 100%;
+  }
+  /*=================================
+  about section styling ends here
+  =================================*/ 
+  /*=================================
+  footer section styling ends here
+  =================================*/ 
+  footer{ display: none;  }
+  /*=================================
+  footer section styling ends here
+  =================================*/ 
+  
 }  
